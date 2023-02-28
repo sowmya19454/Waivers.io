@@ -1,0 +1,65 @@
+<head>
+    <title>Responsive Single Page </title>
+    <link rel="stylesheet" type="text/css" href="style-2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    <nav class="nav" id="navbar">
+        <a>Homepage</a>
+        <a>About Us</a>
+        <a>Services</a>
+        <a>Contact</a>
+        <a>External</a>
+    </nav>
+    <div class="hero">
+        <h1>Explore Tourism and beyond!</h1>
+    </div>
+    <!-- THREE COLUMN LAYOUT -->
+    <div class="wrapper">
+        <div class="row">
+            <div class="col sp-3" id="green">
+                <img src="https://bit.ly/2MOG1BJ" alt="Golden Gate Bridge">
+                <h3 class="green-clr">Golden Gate Bridge</h3>
+                <p>Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper
+                    auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna,
+                    ornare ac scelerisque.</p>
+                <button class="btn" id="green-btn">Button Green</button>
+            </div>
+            <div class="col sp-3" id="blue">
+                <img src="https://bit.ly/2KUKq4m" alt="Plate of Sushi">
+                <h3 class="blue-clr">Plate of Sushi</h3>
+                <p>Conquer Template is provided by templatemo for free of charge. You can use this template for any kind
+                    of website. No credit link is required. All images by Unsplash. Thank you for visiting our website.
+                    Please come again!</p>
+                <button class="btn" id="blue-btn">See Details</button>
+            </div>
+            <div class="col sp-3" id="red">
+                <img src="https://bit.ly/2MizIu0" alt="Tree in sunshine">
+                <h3 class="red-clr">Tree in sunshine</h3>
+                <p>Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper
+                    auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna,
+                    ornare ac scelerisque.</p>
+                <button class="btn" id="red-btn">Button Red</button>
+            </div>
+        </div>
+        <div class="contact-form-bg"></div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+        var para = document.getElementById("col-1-para").innerHTML;
+        if (para.length > 300) {
+            para = para.slice(0, 301) + "...";
+            document.getElementById("col-1-para").innerHTML = para;
+        }
+    </script>
+</body>
