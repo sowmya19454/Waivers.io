@@ -400,7 +400,7 @@ textarea {
         width: 300%;
     }
   }
-  /* @media (min-width: 100px) and (max-width: 350px ) {
+  @media (min-width: 100px) and (max-width: 350px ) {
     .row, .nav {
     flex-wrap: wrap;
       flex-direction: column;
@@ -408,4 +408,4 @@ textarea {
     .row{
         width: 300%;
     }
-  } */
+  }
