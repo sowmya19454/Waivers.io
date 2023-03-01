@@ -391,4 +391,21 @@ textarea {
         width: 300%;
     }
   }
-
+@media (min-width: 350px) and (max-width: 450px ) {
+    .row, .nav {
+    flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .row{
+        width: 300%;
+    }
+  }
+  /* @media (min-width: 100px) and (max-width: 350px ) {
+    .row, .nav {
+    flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .row{
+        width: 300%;
+    }
+  } */
